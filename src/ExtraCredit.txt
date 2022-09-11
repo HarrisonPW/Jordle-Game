@@ -1,0 +1,64 @@
+When you run Jordle.java, please put statisticsFile.txt, success.jpg, guess.jpg, Fail.png, and gt.png in the same folder
+
+
+1. Multiple Language Supported
+Choice Box has created to handle Language setting.
+It generates the following language choices:
+-English
+-Chinese
+-Spanish
+-Russian 
+-Japanese
+When user clicks Japanese Language, the title, Restart button, Instruction button, 
+status message, message of instruction window, error page, and the choice options are all change into japanese language format 
+
+2. Title Special Effect
+I implement the title with special effect that has yellow color with the shadow around the border 
+
+3. Duplicate Text 
+Ability to account for duplicate characters
+(use the second array in Words.java to test)
+
+4. Light and Dark Mode
+Ability to toggle between light/dark mode by having the toggle button
+It will change the  color of background and the message of output in order to fit the background 
+
+5. Appropriate images when the user guesses a word correctly
+It will show appropriate image when user try to guess, fail, and success
+When in the status of guessing, showing the guessing image
+When in the status of fail, showing the fail image
+When in the status of success, showing the success image
+
+6. Icon for the program
+The program has its own icon 
+The icon is the GT icon
+
+7. Full screen Mode
+For Windows, it will show the hint of YOU HAVE TO EXIT BY HINT ESC.
+When you press esc, it will exit the full screen mode
+
+For Mac, it will show the hint of weird message because for mac we can not set the font for full screen exit hint
+When you press esc, it will exit the full screen mode
+
+8. Show statistic Mode
+When you click Show statistic, it will generate ranking in increasing order
+It also shows the current time you have taken to complete the game.
+If you fail the game, current time will show 0.000 seconds.
+If you success, current time will put your record in to the ranking if you are in first 5 place
+It will automatically sort the time in increasing oder  
+You need to click OK button to exit statistic mode
+
+9. Timer
+It will show the current time you take for this game
+When you start to play the game, it will start to count the time
+When you success or fail, it will stop
+Timer is dynamic in order to show the current time you have taken
+
+10. Ability to handle the edge case
+    1. When it is less than 5 characters, it will show the error page
+    2. When use the first try and it is wrong, we restrict user CANNOT enter any character or backspace. It requires user to press enter to go to next try
+    3. When use the first try and it is correct, we restrict user CANNOT press any character, enter, backspace.
+    We restrict user MUST press restart button to play again.
+
+11. Ability to resize the window
+It will automatically arrange its location to fit the window
